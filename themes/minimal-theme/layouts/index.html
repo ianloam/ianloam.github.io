@@ -1,0 +1,11 @@
+{{ partial "header.html" . }}
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Hindenburg_disaster.jpg/800px-Hindenburg_disaster.jpg">
+{{ range (where .Site.RegularPages "Type" "home") }}
+<h2>
+    {{ .Title }}
+</h2>
+<section class="post-snippet">
+	{{.Content}}
+</section>
+{{ end }}
+{{ partial "footer.html" . }}

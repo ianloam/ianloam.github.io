@@ -1,0 +1,12 @@
+{{ partial "header.html" . }}
+{{.Content}}
+{{ range.Data.Pages }}
+<h2>
+    {{ .Title }}
+</h2>
+<section class="post-snippet">
+	{{.Content}}
+</section>
+{{ end }}
+
+{{ partial "footer.html" . }}
