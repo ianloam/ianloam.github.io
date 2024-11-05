@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes on IAN LOAM XYZ</title>
+    <link>http://localhost:1313/notes/</link>
+    <description>Recent content in Notes on IAN LOAM XYZ</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Autodidacticism and Research</title>
+      <link>http://localhost:1313/notes/autodidact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/autodidact/</guid>
+      <description>&lt;p&gt;Work in progress&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Math Foundations: Intuitionism and Computation</title>
+      <link>http://localhost:1313/notes/mathfoundations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/mathfoundations/</guid>
+      <description>&lt;h1 id=&#34;math-foundations-intuitionism-and-computation&#34;&gt;Math Foundations: Intuitionism and Computation&lt;/h1&gt;&#xA;&lt;p&gt;{{ .Title }}&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-background&#34;&gt;1. Background&lt;/h2&gt;&#xA;&lt;p&gt;Generally speaking, there is a tendency with scientific disciplines to dismisss advances made through qualitative research. While overtly technical approaches are universally appreciated for clear use of evidence and quantitative analysis for its results, qualitative research is perceived as less substantial for being too anecdotal, subjective or irrelevant.&lt;/p&gt;&#xA;&lt;p&gt;This criticism would be fine if it is for acknowledging the risk involved in engaging with this kind of research, but there is a forgetfulness that anything quantitative can not stand on its own. The way you phrase and interpret a question, answer, or methodology relies entirely on qualitative factors. A wrong variable, new dimension or perspective can render a result entirely pointless or nonsensical without any change to the evidence or methods. The problems stemming from ignoring qualitative analysis can span much further than just needing to rephrase or add to outdated results, but can completely cut the value of entire fields.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Nonrepresentational Programming and Multiparadigm Languages</title>
+      <link>http://localhost:1313/notes/paradigms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/paradigms/</guid>
+      <description>&lt;p&gt;Work in progress&amp;hellip;&lt;/p&gt;&#xA;&lt;h2&gt;Nonrepresentational Programming and Multiparadigm Languages&lt;/h2&gt;&#xA;&lt;section&gt;&#xA;&lt;h3 id=&#34;1-background&#34;&gt;1. Background&lt;/h3&gt;&#xA;&lt;p&gt;With Turing Completeness, we develop the idea of whatever is possible in one programming language is also possible in every other. However, this is only true if you narrow your perspective to acknowledge only the formal mathematics of computable functions, while ignoring any broader sense of practical application or language expressiveness. This is instantly clear with esoteric and Turing tarpit languages (such as Brainfuck, Malbolge, etc.) that may have none or limited I/O and abstraction capabilties, among other inconveniences. Implementing an algorithm that may be trivial in C or Python is next to impossible in these languages.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

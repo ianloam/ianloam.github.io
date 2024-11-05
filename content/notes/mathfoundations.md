@@ -1,0 +1,161 @@
+---
+title: "Math Foundations: Intuitionism and Computation"
+---
+
+# Math Foundations: Intuitionism and Computation
+
+
+## 1. Background
+
+Generally speaking, there is a tendency with scientific disciplines to dismisss advances made through qualitative research. While overtly technical approaches are universally appreciated for clear use of evidence and quantitative analysis for its results, qualitative research is perceived as less substantial for being too anecdotal, subjective or irrelevant.
+
+This criticism would be fine if it is for acknowledging the risk involved in engaging with this kind of research, but there is a forgetfulness that anything quantitative can not stand on its own. The way you phrase and interpret a question, answer, or methodology relies entirely on qualitative factors. A wrong variable, new dimension or perspective can render a result entirely pointless or nonsensical without any change to the evidence or methods. The problems stemming from ignoring qualitative analysis can span much further than just needing to rephrase or add to outdated results, but can completely cut the value of entire fields.
+
+In particular, with fields heavily dependent on theory, like mathematics, a qualitative ignorance would drive its results to being too detached from the world. Even with all the deep insightful answers that are produced and new creative questions that now exist, the theorems are empty and are ultimately just noise for closed-off groups to propogate between eachother. When the complications and paradoxes eventually arise, its easy to apologize for them by making exceptions or popularizing defective results as interesting novelties.
+
+This is not to say that all of mathematics is useless, but it is clear that disregarding how mathematics is qualitatively framed sacrifices its authenticity and usefulness as a field. 
+
+## 2. Critique of Mathematics
+
+What is to blame for this qualitative ignorance is how the current math foundations create a limited perspective for how proofs, theorems, etc. gain meaning within language.
+
+Specifically, this treatment would be the standard foundation of ZFC-set theory, which broadly supports a metaphysical view of axiomatic Platonism. More concretely, this approach is to state a variety of semi-arbitrary axioms as a starting point, and through certain rules of inference, build up more and more theorems that imply new external mathematical objects. The role of ZFC axioms, in particular, is to be the most productive basis of other potential axiomatic systems, so, in theory, it would be a reference point to produce any mathematical object possible.
+
+As well organized as this system is, it has the tendency to generate linguistic tricks suggesting the truth of theorems that are nonsensical.
+
+### 2.1. Invisible Training Wheels
+
+This issue lies in the assumption that proofs can reference objects that are external to the language you interpret at face value. To explain how this happens and why this is an issue, here is an analogy adapted from Hubert Dreyfus:
+
+> When I learned to ride a bicycle I had training wheels because otherwise I would fall over. Now that I have some experience on the bicycle without the training wheels, I can ride the bike without falling over… Do I now have invisible training wheels?
+
+Clearly I am only balancing, but by knowing the past neccessity of training wheels we can suggest that these "invisible training wheels" would exist in our later state because if they were not there then there is a contradiction, I would have fallen over.
+
+While on the bicycle it was the increase in skill that permitted you to not fall over without training wheels, why is it not that in mathematics an increase in subjective understanding or intuition that substitutes external mathematical objects?
+
+If we were to write a proof by contradiction, then what stops our resulting theorem from also becoming "invisible"? Proving that a proposition P is true, by first negating it then finding some kind of contradiction, could turn a purely intuitive insight into "invisible training wheels" just like the bicycle analogy.
+
+So, in practice, what would an intuititive insight and its resulting "invisible training wheels" look like? There might be endless examples, but a particularly simple one to see would be the Real numbers defined via infinite decimal expansion.
+
+### 2.2. Square Root of 2
+
+Historically, the first development of the Reals arised out of the ancient Greek discovery of irrational numbers with $\sqrt{2}$.
+
+> As the story goes, a Pythagorean named Hippasus discovered that the diagonal of a unit square could not be expressed as a ratio of natural numbers, thus making it irrational.
+
+Yet, even though $\sqrt{2}$ is irrational, we can quickly see that it can be approximated with rational (or in this case decimal) numbers like $1.414$, $1.414213$, etc. with increasing levels of accuracy. So, the intuition behind this would be the anticipation we have to keep approximating this number without limit. But, since it is a contradiction to say it is not a fixed quantity (because we can see geometrically the diagonal line has a fixed length), then there must be a determinate numerical representation. This leads us to believe that we can define $\sqrt{2}$ as this infinite decimal expansion, $1.414...$, such that is entirely independent of how you might define $\sqrt{2}$ in terms of some finite geometrical construction or algebraic formula.
+
+While I do not deny the existence of $\sqrt{2}$, when we look at its definition as $1.414...$ there are strange complications.
+
+The most obvious of which is how handwavy and ill-defined the literal "$...$" in the notation can be. The next digit in the expansion has a certain degree of randomness, so there is not much of any tangible way to generate the digits unabmbiguously to give the "$...$" some clarity. So, this added "$...$" as an independent definition would leave the full numerical representation of $1.414...$ "invisible", even though we have the intuition of endless potential approximation and the contradiction of being a fixed length tells us that there is a determinate representation.
+
+However, to cope, you can defer to a pre-existing finite definition such as the geometrical construction or algebraic formula to generate the digits, which is fine. Yet this defeats the point of making infinite decimal expansions an independent definition for this number.
+
+Where this gets troublesome is when the "$...$" notation shifts from not only masking the ambiguity of this individual number, but to implying the existence of other Real numbers without any finite representation to leverage off of.
+
+We have the intuition that, because $1.414...$ is one example of a defined infinite decimal expansion, there is the potential for any decimal place to be interchanged with a new digit $0$-$9$. So, it would be by possibility alone, of changing any or all digits, that it constitutes the existence of Real numbers defined without being able to write the full expansion or summarize it in some finite representation. 
+
+To illustrate, imagine that we represent numbers as combination locks, where each wheel is a digit $0$-$9$. Say we had a lock with $3$ wheels and it is set to the number $123$. Even if we do not mechanically set it to some other number such as $111$, $432$, etc., we still know that each can exist on the lock because of what is possible under each wheel, regardless if we ever choose to set it to that number. Finding $1.414...$ would be as if we had found an infinitely expanding combination lock. Although we can not finitely represent every number on this lock, we can still say they exist because of the potential under each wheel.
+
+While it is possible to know the existence of something without neccessarily naming it, the reality is that the only reason that we were able to get to $1.414..$. was by multiple finite approximations whose full result was always invisible. This prospect of interchanging the "possible digit" in the infinite expansion only arised from a pre-existing finite representation and not a self-contained infinite representation. Thus, the Real numbers that rely entirely on their infinite decimal expansion are always "invisible" because we never grasped any infinitely expanding "combination lock" from discovering $\sqrt{2}$.
+
+### 2.3. Further Invisibility and Coping with Paradoxes
+
+Often cases, the first response after seeing the issues behind infinite decimal expansions is to still try to affirm the general idea of Real numbers, but by some alternative justification. Some popular Real number constructions, for example, include construction via Dedekind cuts or Cauchy sequences.
+
+The issue with this would be that both of these constructions (and also other potential alternatives) rely on the existence of infinite self-contained sets.
+
+This follows much of the same problems that infinite decimal expansion also suffered from. However, instead of observing how the ability to forever approximate the square root of two led to an invisible infinite representation even though we can see it geometrically, the ability to endlessly include some next number in a finite set to approach the set of all natural numbers (for example) would also lead to another invisible infinite representation even though we know that there exists a natural number system (i.e. $ \{ 1 \}$, $\{ 1,2,3 \}, \{ 1,2,3,4 \} $ and so on does not lead to $\mathbb{N}= \{1,2,3,...\}$ even though they each are a natural number).
+
+It is also noteworthy that this attempt to recover the Real numbers, while not erroneous to desire trying, lends an insight to the more general issue of paradox coping.
+
+To illustrate this, it seems that whenever a significant paradox arises, such as Russell's Paradox in set theory, it is typically resolved by making some sort of exception for its existence instead of trying to understand any root cause.
+
+In the case of Russell's Paradox, the solution often is just adding a new axiom to set theory that specifically accounted for this paradox (Axiom of Regularity in ZFC).
+
+This becomes a problem as soon as you realize that putting a band-aid for each individual paradox only works as a short-term and superficial solution that permits future paradoxes to arise anyways.
+
+Instead, to demonstrate how a more effective analysis would play out, it would have been better to investigate existing axioms, such as the Axiom of Choice in ZFC. This axiom was the rationale that led to invisible infinite sets, and permitted Russell's Paradox to occur along with future and still unresolved paradoxes such as the Banach-Tarski Paradox.
+
+Overall, when it comes to paradoxes, it is neccessary to see past any sunk cost fallacy and ensure that the fundamentals are all in order, instead of trying to cope and argue around an issue.
+
+## 3. How Mathematics Really Works
+
+Throughout the critique, the introduction of linguistic tricks, such as invisibility, indicated the neccessity of subjective understanding to determine judgements made in mathematics.
+
+This is not to say that mathematics is in any way "a matter of opinion" or "relative", but that mathematical truth is not exclusively known through language or any other explicit form of expression.
+
+Instead, there is some sense of an integrated approach between language with more implicit knowledge like intuition.
+
+### 3.1. Holism and Psychology
+
+In the bicycle analogy, it was the intrinsic skill for riding a bicycle that substituted the need for training wheels. However, when it comes to performing mathematics we do not see the capacity for any physical skill, rather a perceptiveness of patterns and ability to anticipate possible mathematical actions.
+
+This perceptiveness and anticipation is better understood as the ability to comprehend context beyond a literal representation or theorem. We can see a whole without neccessarily being able to pin down every aspect systematically.
+
+If we looked back at the square root of 2, we have this intuition that we can approximate it endlessly. But it is never as if we have knowledge of its final and infinite approximation, it is more as if we feel a horizon of actions to take without taking the steps to execute them. We anticipate this gap in our minds without it ever really being put on paper.
+
+Like skillfulness on a bicycle, this understanding of context is another intrinsic ability, but with our mind instead of body.
+
+In psychology, we see a concrete analogy of this mental phenomena through Gestalt theory:
+
+> The Gestalt psychologists emphasized how humans do not simply perceive objects as isolated elements but rather as whole systems. They supported a holistic view where the whole is more than the sum of its parts, and gives rise to patterns (or gestalts) that exist without any explicit part to represent them.
+
+> This perspective contrasts with the reductionist view where "a whole is equal to the sum of its parts" and that any pattern is attributed to isolated components.
+
+If we saw mathematics in the Gestalt view, every mathematical expression is its own isolated element surrounded by "intuitive gaps" providing a context to the whole of other expressions yet not constituting its own explicit part.
+
+On the other hand, in the reductionist view, we assume that everything, including "intuitive gaps", are neccessarily another isolated part and relate to other mathematical expressions through explicit logic.
+
+It is clear that our mathematical intuition mirrors the behaviour of Gestalt Psychology, but the current math foundations, however, confuse it for mirroring the reductionist view.
+
+When we consider a mathematical object "invisible" (such as the square root of 2), it comes from the mistake of assuming that one of these "intuitive gaps" are another isolated part and allow us to apply the same formal logic.
+
+In reality, what these "intuitive gaps" contribute is background for how we manipulate mathematical expressions but not what the mathematical expressions represent.
+
+## 4. New Foundations
+
+The quickest way to accomodate the earlier critique would be by keeping the formal axiomatic approach oriented around set theory and logic, but adapt it to accept intuitionistic logic and finitism.
+
+While this is an entirely correct solution and addresses each core grievance, it is not the best way to envision our more holistic Gestalt view and integrate language with intuition.
+
+Even though we take steps to avoid reductionist errors (like invisibility), the suggested solution still holds on to the underlying structure of reductionism because of its axiomatic and logical methodology.
+
+We still speak of mathematical expressions as if they are only built out of parts and relate explicitly. We see this in how we isolate some core axioms, which build up step by step to logically relate and imply new theorems.
+
+You would still assume that any intuitive insight is neccessarily an explicit part or expression, but now you are more picky about their rules, instead of treating them as genuine implicit knowledge.
+
+So, while technically being correct, you narrow your perspective of mathematical truth through this structural baggage.
+
+### 4.1. Finite Methods and Informality
+
+To combat this, it is better for math foundations to not have axioms or formal logic at all. Rather than isolating entire domains of mathematics by prescribing formalisms as underlying truths, instead .
+
+/Mathematics would be centered around the underlying human activity and processes that prove further theorems and conclusions. When you put axioms/logic in the background and emphasize the methods and finite steps, you allow for a more open-ended and context-aware exposition of your theorems and ideas./
+
+/Intuition would describe potential mathematical actions or broader context of the informal axioms, instead of needing to be imperfectly filtered down through formal structures. So, emphasizing finite methods avoids taking the imposed structure of formalism too literally and allows for intuitive insights to have more clarity./
+
+### 4.2. Computation and Descriptive Theories
+
+When we take finite methods and informality into practice the evident organization of mathematics begins to resemble something closer to theoretical computer science.
+
+Computers are finite machines, and can execute finite methods within some human programmed algorithm. While, informal axioms can be better looked at as descriptive theories of these programs. They outline how mathematical structures emerge out of these computational processes, rather than prescribing the existence of mathematical structure and how that imposes further structure.
+
+Instead of proofs and logic, programs and computation determine mathematical results. The focus shifts from deriving formal truths to observing and describing how structure from mathematics arises. After observing programs, a descriptive theory would provide a narrative to elaborate for how computations operate and possibly provide predictions for how they would keep operating.
+
+Mathematical rigor is now grounded on the reproducibility and reliability of programs over formal proof. Descriptive theories would articulate the principles and patterns that govern computational processes, subsequently outlining their consistency and predictability.
+
+Mathematical understanding ultimately becomes context-dependent. It is shaped by the underlying computational environment and problems. If we begin to develop more fine-tuned theories on not just the particular computational processes but of computation itself they do not disrupt/change fundamental understandings but clarify our original ideas, while manipulating old axioms always risks ruining previously uncovered ideas.
+
+## 5. Final Remarks
+
+Overall, to fight off against the threat of declining qualitative standards within mathematics, a foundation based on Computation and Intuition is neccessary.
+
+It is clear that without this that mathematics begins to ignore its underlying human activity and contextual understanding, subsequently producing nonsensical and superficial claims.
+
+A methodology of reproducible programs and descriptive theories on the emergence of structure within computational processes should replace the dominant practices of formal proof-making and axiomatic frameworks.
+
+The path forward demands we set aside attachment from what makes mathematics reductive with any coping that reinforces it, and embrace a more authentic and open view of mathematics. 
+
+
+
