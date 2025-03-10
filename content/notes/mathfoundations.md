@@ -3,11 +3,13 @@ title: "Math Foundations: Intuitionism and Computation"
 ---
 
 # Math Foundations: Intuitionism and Computation
+*August 20, 2024*
 
+Understanding intuitionism, and 
 
 ## 1. Background
 
-Generally speaking, there is a tendency with scientific disciplines to dismisss advances made through qualitative research. While overtly technical approaches are universally appreciated for clear use of evidence and quantitative analysis for its results, qualitative research is perceived as less substantial for being too anecdotal, subjective or irrelevant.
+There is often a tendency within scientific disciplines to dismiss advances made through qualitative research. While overtly technical approaches are universally appreciated for clear use of evidence and quantitative analysis for its results, qualitative research is perceived as less substantial for being too anecdotal, subjective or irrelevant.
 
 This criticism would be fine if it is for acknowledging the risk involved in engaging with this kind of research, but there is a forgetfulness that anything quantitative can not stand on its own. The way you phrase and interpret a question, answer, or methodology relies entirely on qualitative factors. A wrong variable, new dimension or perspective can render a result entirely pointless or nonsensical without any change to the evidence or methods. The problems stemming from ignoring qualitative analysis can span much further than just needing to rephrase or add to outdated results, but can completely cut the value of entire fields.
 
@@ -129,11 +131,11 @@ So, while technically being correct, you narrow your perspective of mathematical
 
 ### 4.1. Finite Methods and Informality
 
-To combat this, it is better for math foundations to not have axioms or formal logic at all. Rather than isolating entire domains of mathematics by prescribing formalisms as underlying truths, instead .
+To combat this, it is better for math foundations to not rely on axioms or formal logic at all. Rather than isolating entire domains of mathematics by prescribing formalisms as underlying truths, instead .
 
-/Mathematics would be centered around the underlying human activity and processes that prove further theorems and conclusions. When you put axioms/logic in the background and emphasize the methods and finite steps, you allow for a more open-ended and context-aware exposition of your theorems and ideas./
+Mathematics would be centered around the underlying human activity and processes that prove further theorems and conclusions. When you put axioms/logic in the background and emphasize the methods and finite steps, you allow for a more open-ended and context-aware exposition of your theorems and ideas.
 
-/Intuition would describe potential mathematical actions or broader context of the informal axioms, instead of needing to be imperfectly filtered down through formal structures. So, emphasizing finite methods avoids taking the imposed structure of formalism too literally and allows for intuitive insights to have more clarity./
+Intuition would describe potential mathematical actions or broader context of the informal axioms, instead of needing to be imperfectly filtered down through formal structures. So, emphasizing finite methods avoids taking the imposed structure of formalism too literally and allows for intuitive insights to have more clarity.
 
 ### 4.2. Computation and Descriptive Theories
 

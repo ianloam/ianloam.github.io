@@ -6,13 +6,13 @@
         <link rel="shortcut icon" href="/static/favicon.ico" />
         <style>
 	  html {overflow-y: scroll}
-          body {float:left; max-width: 650px; min-height: 100% -10px; margin: 15px auto; padding: 0 10px; font: 18px/1.5 "Times New Roman", serif, "Times"; background-color: #fff; color: #333; border: 25px solid white;}
-          img {max-height: 270px; max-width:80%; margin: 0 auto}
+          body {max-width: 650px; min-height: 100% -10px; margin: 15px auto; padding: 0 10px; font: 18px/1.5 "Times New Roman", serif, "Times"; background-color: #fff; color: #333; border: 25px solid white;}
+
           nav, footer {text-indent: 30px}
           a {color: #333; font-style: italic; text-decoration: underline dotted; display: inline}
           a:hover {background-color: #222; color: #fff; text-decoration: none}
 	  span {white-space: nowrap}
-	  code {word-break: break-all; font-size: 14px}
+	  code {word-break: break-all; font-size: 12px}
           section {clear: both; border-left: 5px solid #eee; padding-left: 25px}
 	  section img {max-height: 160px}
           h1, h2, h3 {color: #000; font-weight: 500; line-height: 1; font-family: "Times"}
@@ -34,7 +34,7 @@
 
     </head>
     <body>
-      <a href="/" class="header-link">Ian Loam</a> ▪ <a href="/resume.pdf">Resume</a> ▪ <a href="/portfolio">Portfolio</a> ▪ <a href="/library">Library</a> ▪ <a href="/info">Info</a>
+      <a href="/" class="header-link">Ian Loam</a> ▪ <a href="/library">Library</a> ▪ <a href="/resume.pdf">Resume</a>
     <hr>
 	<main>
 
@@ -42,13 +42,14 @@
 
 <img src="/static/notes.jpg" onerror="this.style.display='none'" style="display: block">
 
-<p>Work in progress&hellip;</p>
+<h1 id="autodidacticism-and-research">Autodidacticism and Research</h1>
 
 
 <h1 id="math-foundations-intuitionism-and-computation">Math Foundations: Intuitionism and Computation</h1>
-<p>{{ .Title }}</p>
+<p><em>August 20, 2024</em></p>
+<p>Understanding intuitionism, and</p>
 <h2 id="1-background">1. Background</h2>
-<p>Generally speaking, there is a tendency with scientific disciplines to dismisss advances made through qualitative research. While overtly technical approaches are universally appreciated for clear use of evidence and quantitative analysis for its results, qualitative research is perceived as less substantial for being too anecdotal, subjective or irrelevant.</p>
+<p>There is often a tendency within scientific disciplines to dismiss advances made through qualitative research. While overtly technical approaches are universally appreciated for clear use of evidence and quantitative analysis for its results, qualitative research is perceived as less substantial for being too anecdotal, subjective or irrelevant.</p>
 <p>This criticism would be fine if it is for acknowledging the risk involved in engaging with this kind of research, but there is a forgetfulness that anything quantitative can not stand on its own. The way you phrase and interpret a question, answer, or methodology relies entirely on qualitative factors. A wrong variable, new dimension or perspective can render a result entirely pointless or nonsensical without any change to the evidence or methods. The problems stemming from ignoring qualitative analysis can span much further than just needing to rephrase or add to outdated results, but can completely cut the value of entire fields.</p>
 <p>In particular, with fields heavily dependent on theory, like mathematics, a qualitative ignorance would drive its results to being too detached from the world. Even with all the deep insightful answers that are produced and new creative questions that now exist, the theorems are empty and are ultimately just noise for closed-off groups to propogate between eachother. When the complications and paradoxes eventually arise, its easy to apologize for them by making exceptions or popularizing defective results as interesting novelties.</p>
 <p>This is not to say that all of mathematics is useless, but it is clear that disregarding how mathematics is qualitatively framed sacrifices its authenticity and usefulness as a field.</p>
@@ -81,7 +82,7 @@
 <h3 id="23-further-invisibility-and-coping-with-paradoxes">2.3. Further Invisibility and Coping with Paradoxes</h3>
 <p>Often cases, the first response after seeing the issues behind infinite decimal expansions is to still try to affirm the general idea of Real numbers, but by some alternative justification. Some popular Real number constructions, for example, include construction via Dedekind cuts or Cauchy sequences.</p>
 <p>The issue with this would be that both of these constructions (and also other potential alternatives) rely on the existence of infinite self-contained sets.</p>
-<p>This follows much of the same problems that infinite decimal expansion also suffered from. However, instead of observing how the ability to forever approximate the square root of two led to an invisible infinite representation even though we can see it geometrically, the ability to endlessly include some next number in a finite set to approach the set of all natural numbers (for example) would also lead to another invisible infinite representation even though we know that there exists a natural number system (i.e. ${ 1 }, { 1,2,3 }, { 1,2,3,4 }$ and so on does not lead to $\mathbb{N}={1,2,3,&hellip;}$ even though they each are a natural number).</p>
+<p>This follows much of the same problems that infinite decimal expansion also suffered from. However, instead of observing how the ability to forever approximate the square root of two led to an invisible infinite representation even though we can see it geometrically, the ability to endlessly include some next number in a finite set to approach the set of all natural numbers (for example) would also lead to another invisible infinite representation even though we know that there exists a natural number system (i.e. $ { 1 }$, ${ 1,2,3 }, { 1,2,3,4 } $ and so on does not lead to $\mathbb{N}= {1,2,3,&hellip;}$ even though they each are a natural number).</p>
 <p>It is also noteworthy that this attempt to recover the Real numbers, while not erroneous to desire trying, lends an insight to the more general issue of paradox coping.</p>
 <p>To illustrate this, it seems that whenever a significant paradox arises, such as Russell&rsquo;s Paradox in set theory, it is typically resolved by making some sort of exception for its existence instead of trying to understand any root cause.</p>
 <p>In the case of Russell&rsquo;s Paradox, the solution often is just adding a new axiom to set theory that specifically accounted for this paradox (Axiom of Regularity in ZFC).</p>
@@ -117,9 +118,9 @@
 <p>You would still assume that any intuitive insight is neccessarily an explicit part or expression, but now you are more picky about their rules, instead of treating them as genuine implicit knowledge.</p>
 <p>So, while technically being correct, you narrow your perspective of mathematical truth through this structural baggage.</p>
 <h3 id="41-finite-methods-and-informality">4.1. Finite Methods and Informality</h3>
-<p>To combat this, it is better for math foundations to not have axioms or formal logic at all. Rather than isolating entire domains of mathematics by prescribing formalisms as underlying truths, instead .</p>
-<p>/Mathematics would be centered around the underlying human activity and processes that prove further theorems and conclusions. When you put axioms/logic in the background and emphasize the methods and finite steps, you allow for a more open-ended and context-aware exposition of your theorems and ideas./</p>
-<p>/Intuition would describe potential mathematical actions or broader context of the informal axioms, instead of needing to be imperfectly filtered down through formal structures. So, emphasizing finite methods avoids taking the imposed structure of formalism too literally and allows for intuitive insights to have more clarity./</p>
+<p>To combat this, it is better for math foundations to not rely on axioms or formal logic at all. Rather than isolating entire domains of mathematics by prescribing formalisms as underlying truths, instead .</p>
+<p>Mathematics would be centered around the underlying human activity and processes that prove further theorems and conclusions. When you put axioms/logic in the background and emphasize the methods and finite steps, you allow for a more open-ended and context-aware exposition of your theorems and ideas.</p>
+<p>Intuition would describe potential mathematical actions or broader context of the informal axioms, instead of needing to be imperfectly filtered down through formal structures. So, emphasizing finite methods avoids taking the imposed structure of formalism too literally and allows for intuitive insights to have more clarity.</p>
 <h3 id="42-computation-and-descriptive-theories">4.2. Computation and Descriptive Theories</h3>
 <p>When we take finite methods and informality into practice the evident organization of mathematics begins to resemble something closer to theoretical computer science.</p>
 <p>Computers are finite machines, and can execute finite methods within some human programmed algorithm. While, informal axioms can be better looked at as descriptive theories of these programs. They outline how mathematical structures emerge out of these computational processes, rather than prescribing the existence of mathematical structure and how that imposes further structure.</p>
@@ -133,16 +134,14 @@
 <p>The path forward demands we set aside attachment from what makes mathematics reductive with any coping that reinforces it, and embrace a more authentic and open view of mathematics.</p>
 
 
-<p>Work in progress&hellip;</p>
-<h2>Nonrepresentational Programming and Multiparadigm Languages</h2>
-<section>
-<h3 id="1-background">1. Background</h3>
+<h1 id="nonrepresentational-programming-and-multiparadigm-languages">Nonrepresentational Programming and Multiparadigm Languages</h1>
+<h2 id="1-background">1. Background</h2>
 <p>With Turing Completeness, we develop the idea of whatever is possible in one programming language is also possible in every other. However, this is only true if you narrow your perspective to acknowledge only the formal mathematics of computable functions, while ignoring any broader sense of practical application or language expressiveness. This is instantly clear with esoteric and Turing tarpit languages (such as Brainfuck, Malbolge, etc.) that may have none or limited I/O and abstraction capabilties, among other inconveniences. Implementing an algorithm that may be trivial in C or Python is next to impossible in these languages.</p>
 <p>So, how do we measure when a language has not only achieved Turing Completeness, but also some kind of &ldquo;General Completeness&rdquo;?</p>
 <p>The most evident answer would be by the language&rsquo;s features. Whether it supports certain data-structures, libraries, syntax, garbage collection, type systems, execution models, or any other particular surface aspect of the language implemented to give it structure. If we select a group of features then they can be applied to a defined use-case or problem.</p>
 <p>Extending from this, we begin to develop the idea of programming paradigms. Which are families of features that work well toghether and aimed at resembling a specific style of programming (e.g. Imperative, Functional, OOP, etc.).</p>
 <p>Thus, when it comes to &ldquo;General Completeness&rdquo;, it could be achieved through Multiparadigm languages. This is because by implementing a large diversity of programming styles, we accumulate the amount and combinations of features that would potentially hit a targeted use-case.</p>
-<h3 id="2-critique-of-multiparadigm-languages">2. Critique of Multiparadigm Languages</h3>
+<h2 id="2-critique-of-multiparadigm-languages">2. Critique of Multiparadigm Languages</h2>
 <p>While Multiparadigm languages do provide a viable solution to General Completeness, their pursuit of attaining comprehensive features produces a landscape of needless complexity.</p>
 <p>/For example, when learning the language for the first time, the user has to deal with an overload of options and frameworks. For some given problem, the user not only has to solve it but navigate through all the features to find the most appropriate approach. This creates another layer of confusion, and needlessly detracts from the labor it took solving that problem.</p>
 <p>The paradigms are not always compatible. Features from one paradigm may not integrate seamlessly with those from another, creating edge cases and subtle bugs that can be difficult to diagnose and fix. Even when corrected by the developer, there is always the need for some specialized structure or idiomatic solution (wee see the rise of syntax sugars and conventions like Design Patterns within OOP languages), which in isolation appears convenient, but as they accumulate contribute to an increasingly irregular and unpredictable language.</p>
@@ -153,7 +152,7 @@
 <p>/On the other hand, the design of the C programming language provides an example of this problem independent approach. While not achieving &ldquo;General Completeness&rdquo;, the design philosophy behind the language avoids the pitfalls of Multiparadigm languages through simplicity and a well-defined scope.</p>
 <p>Inspired by the UNIX philosophy, C emphasizes &ldquo;doing one thing well&rdquo;. For C this is: creating efficient, direct mapping to machine instructions for system-level programming.
 /</p>
-<h3 id="3-use-structures-and-programming-paradigms">3. Use-Structures and Programming Paradigms</h3>
+<h2 id="3-use-structures-and-programming-paradigms">3. Use-Structures and Programming Paradigms</h2>
 <p>It seems that between Multiparadigm languages and C we have to choose between General Completeness and problem independence. However, this separation only arises because of our analysis of language design via programming paradigms and features.</p>
 <p>We understand that there is a diverse set of applications for programming from web design, low-level systems, etc. with each respective feature to accomodate them. If we were to imagine an expansive map of all features, languages like C would be a small and well established territory while Multiparadigm languages would be growing into every domain.</p>
 <p>However, when analyzing this hypothetical map, we begin to see that the territories of features are not as neatly defined as one might think. The boundaries between features tend to blur and overlap. Certain features can be dependent on eachother in unexpected ways, or the same feature can have differing limitations/capabilities depending on the context.</p>
@@ -169,20 +168,20 @@
 <h3 id="31-primitive-use-structures">3.1. Primitive Use-Structures</h3>
 <p>More generally, if we were</p>
 <h3 id="32-hybrid-compilers">3.2. Hybrid Compilers</h3>
-<h3 id="4-nonrepresentational-languages">4. Nonrepresentational Languages</h3>
+<h2 id="4-nonrepresentational-languages">4. Nonrepresentational Languages</h2>
 <h3 id="41-design-principles">4.1. Design Principles</h3>
 <h3 id="42-key-features">4.2. Key features</h3>
 <h3 id="43-implementation">4.3. Implementation</h3>
-<h3 id="5-implications-and-future-directions">5. Implications and Future Directions</h3>
-<h3 id="6-conclusion-and-final-remarks">6. Conclusion and Final Remarks</h3>
+<h2 id="5-implications-and-future-directions">5. Implications and Future Directions</h2>
+<h2 id="6-conclusion-and-final-remarks">6. Conclusion and Final Remarks</h2>
 
-</section>
 
+<h1 id="notes-on-algebra">Notes on Algebra</h1>
 
 
 </main>
 <hr>
-<footer><p>Copyright (c) 2024, Ian Loam</p></footer>
+<footer><p>Copyright (c) 2025, Ian Loam</p></footer>
 </body>
 </html>
 
