@@ -6,7 +6,7 @@ Hello! I'm Ian Loam, a Math and CS major at UC Berkeley. I am passionate about c
 
 In my free time: I read critical theory and philosophy; practice for triathlons; study for the putnam; and listen to a lot of music...
 
-![](/static/image.gif)
+![](/static/image.jpg)
 
 I am currently looking for research positions studying: complexity theory, post-quantum cryptography, algebraic geometry, or deep learning theory; and summer internships related to: defense tech or cybersecurity
 
