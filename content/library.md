@@ -54,6 +54,7 @@ Still organizing, will eventually provide link for each book with ISBN and versi
 - Baudrillard - Simulacra and Simulation
 - Deleuze - Difference and Repetition
 - Bergson - Creative Evolution
+- Brassier - Nihil Unbound
 - Feyeraband - Against Method
 - Plotinus - The Essential Plotinus
 - Girard - All Desire is a Desire for Being
