@@ -4,7 +4,7 @@ title: "Home"
 
 Hello! I'm Ian Loam, a Math and CS major at UC Berkeley. I am passionate about cryptography, theoretical computer science and pure math. 
 
-In my free time: I read critical theory and philosophy; practice for triathlons; study for the putnam; and listen to a lot of music...
+In my free time: I read critical theory and philosophy; practice for triathlons; study for the putnam; and listen to a lot of [music](https://open.spotify.com/user/5q2l5w4vdwraoftg5qah3rvse)...
 
 ![](/static/cezanne.jpg)
 
