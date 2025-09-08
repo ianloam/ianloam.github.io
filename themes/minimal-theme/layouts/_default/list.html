@@ -1,8 +1,0 @@
-{{ partial "header.html" . }}
-{{ $path := strings.TrimSuffix "/" (strings.TrimPrefix "/" .RelPermalink) }}
-{{ $imgUrl := print "/static/" $path ".jpg" }}
-<img src="{{ $imgUrl }}" onerror="this.style.display='none'" style="display: block">
-{{ range.Data.Pages }}
-{{.Content}}
-{{ end }}
-{{ partial "footer.html" . }}
