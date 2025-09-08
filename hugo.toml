@@ -10,21 +10,29 @@ title = "Ian Loam"
 
 
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.goldmark.extensions]
+    [markup.goldmark.extensions.passthrough]
+      enable = true
+
 [menu]
-   [[menu.main]]
-     identifier = "home"
-     name = "Home"
-     url = "/"
-     weight = 1
+    [[menu.main]]
+      identifier = "home"
+      name = "Home"
+      url = "/"
+      weight = 1
 
-   [[menu.main]]
-     identifier = "blog"
-     name = "Blog"
-     url = "/blog/"
-     weight = 2
+    [[menu.main]]
+      identifier = "blog"
+      name = "Blog"
+      url = "/blog/"
+      weight = 2
 
-   [[menu.main]]
-     identifier = "projects"
-     name = "Projects"
-     url = "/projects/"
-     weight = 3
+    [[menu.main]]
+      identifier = "projects"
+      name = "Projects"
+      url = "/projects/"
+      weight = 3
