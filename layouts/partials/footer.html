@@ -1,0 +1,15 @@
+<footer>
+    <p>&copy; {{ now.Format "2006" }} {{ .Site.Params.author }}</p>
+    <p>
+        {{ with .Site.Params.email }}
+        <a href="mailto:{{ . }}">Email</a>
+        {{ end }}
+        {{ with .Site.Params.github }}
+        <a href="https://github.com/{{ . }}">GitHub</a>
+        {{ end }}
+        {{ with .Site.Params.twitter }}
+        <a href="https://twitter.com/{{ . }}">Twitter</a>
+        {{ end }}
+        <a href="/477S6wAyDiVXStW9j8YyVqQyRhmhroKX9LAYrv4LNy9P5izX2eQQmB6SmuFtpptkSqLf5bxjXbZ7M6f9eLn19psp9gvGmsz">Monero</a>
+    </p>
+</footer>

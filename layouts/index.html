@@ -1,0 +1,17 @@
+{{ define "main" }}
+{{ .Content }}
+<br>
+<section class="latest-writings">
+    <h3>Latest Writings</h3>
+    {{ range first 3 (where .Site.RegularPages "Section" "blog") }}
+    <ul class="writing-preview">
+        <li>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+            {{ if .Params.tags }}
+            <span>{{ range $i, $tag := .Params.tags }}{{ if $i }} • {{ end }}{{ $tag }}{{ end }}</span>
+            {{ end }}
+        </li>
+    </ul>
+    {{ end }}
+</section>
+{{ end }}

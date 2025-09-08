@@ -1,0 +1,277 @@
+/* Design System Variables - Static Web Print */
+:root {
+    /* Colors - Ink-on-paper metaphor */
+    --color-text-primary: #000;      /* Dense black ink */
+    --color-text-secondary: #222;    /* Muted ink */
+    --color-text-tertiary: #555;     /* Light ink */
+    --color-text-muted: #666;        /* Faint ink */
+    --color-background: #fdfdfd;     /* Paper texture */
+    --color-border-light: #f0f0f0;   /* Fine rule */
+    --color-border-medium: #eee;     /* Medium rule */
+
+    /* Typography - Print-inspired */
+    --font-family-primary: Georgia, serif;
+    --font-size-base: 16px;
+    --line-height-base: 1.7;
+    --letter-spacing-base: 0.01em;
+
+    /* Grid-based Spacing Scale (print-inspired rhythm) */
+    --space-unit: 1rem;              /* Base unit: 16px */
+    --space-xs: calc(var(--space-unit) * 0.5);   /* 8px */
+    --space-sm: var(--space-unit);                /* 16px */
+    --space-md: calc(var(--space-unit) * 1.5);   /* 24px */
+    --space-lg: calc(var(--space-unit) * 2);     /* 32px */
+    --space-xl: calc(var(--space-unit) * 2.5);   /* 40px */
+    --space-2xl: calc(var(--space-unit) * 3);    /* 48px */
+
+
+    /* Layout - Grid foundation */
+    --max-width-content: 600px;
+    --border-width-thin: 1px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: var(--max-width-content);
+    margin: var(--space-lg) auto; /* Tighter top/bottom margin */
+    padding: 0 var(--space-lg);
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    letter-spacing:Personal tools
+    var(--letter-spacing-base);
+    color: var(--color-text-secondary);
+    background: var(--color-background);
+    /* Subtle paper texture simulation */
+    background-size: 20px 20px;
+}
+/* Typography Hierarchy */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-primary);
+    color: var(--color-text-primary);
+    line-height: 1.2;
+    margin-bottom: var(--space-sm);
+}
+
+h1 {
+    font-size: 2rem; /* 32px */
+    font-weight: 400; /* Normal weight for print-like feel */
+    letter-spacing: -0.02em;
+    margin-top: 0;
+    margin-bottom: var(--space-md);
+    text-shadow: 0 1px 0 rgba(0,0,0,0.1); /* Subtle ink depth */
+    border-bottom: 0.5px solid var(--color-border-light); /* Fine rule */
+    padding-bottom: var(--space-xs);
+}
+
+h2 {
+    font-size: 1.25rem; /* 20px */
+    color: var(--color-text-secondary);
+    margin-top: var(--space-md); /* Even tighter for coherence */
+    margin-bottom: var(--space-sm);
+}
+
+h3 {
+    font-size: 1rem; /* Slightly smaller for subtlety */
+    color: var(--color-text-tertiary);
+    margin-top: var(--space-sm); /* Tighter for rhythm */
+    margin-bottom: var(--space-xs);
+}
+
+p {
+    margin-bottom: var(--space-sm);
+}
+
+nav {
+    text-align: center;
+    margin: var(--space-sm) 0; /* Tighter for visual cohesion */
+}
+
+header {
+    text-align: center;
+    margin-bottom: var(--space-sm);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 var(--space-sm);
+}
+
+a {
+    color: var(--color-text-secondary);
+    background: var(--color-background);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: var(--color-text-primary);
+}
+
+.header-link {
+    font-size: 1.5rem; /* 24px */
+    text-decoration: none;
+    color: var(--color-text-primary);
+    font-weight: 400; /* Normal weight */
+}
+
+ul, ol {
+    margin-bottom: var(--space-sm);
+    padding-left: var(--space-lg);
+}
+
+article {
+    margin-bottom: var(--space-lg); /* Consistent rhythm */
+    padding-bottom: var(--space-sm);
+}
+
+article:not(:last-child)::after {
+    content: '';
+    display: block;
+    height: 1px;
+    background: var(--color-border-light);
+    margin-top: var(--space-lg);
+}
+
+section {
+    margin-bottom: var(--space-2xl);
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
+
+.latest-writings {
+    margin-bottom: calc(var(--space-lg) + 0.375rem); /* Further increased to compensate */
+    text-align: center;
+}
+
+.writing-preview {
+    margin-bottom: 0.125rem; /* Further reduced to 2px */
+    padding: var(--space-xs) 0;
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.writing-preview a {
+    font-size: 0.875rem;
+    font-weight: normal;
+    margin-right: var(--space-xs);
+}
+
+.writing-preview span {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+}
+
+.article-description {
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+    margin-top: var(--space-xs);
+    margin-bottom: var(--space-sm);
+}
+
+time {
+    font-style: italic;
+    color: var(--color-text-muted);
+    display: block;
+    margin-bottom: var(--space-sm);
+}
+
+
+
+footer {
+    margin-top: var(--space-lg); /* Tighter spacing */
+    padding-top: var(--space-sm);
+    border-top: var(--border-width-thin) solid var(--color-border-medium);
+    text-align: center;
+    color: var(--color-text-muted);
+}
+
+footer p {
+    margin-bottom: var(--space-xs);
+}
+
+footer a {
+    margin: 0 var(--space-xs);
+}
+
+pre {
+    overflow-x: auto;
+    padding: var(--space-sm);
+}
+
+code {
+    font-family: 'Courier New', monospace;
+    word-break: break-all;
+}
+
+
+
+/* Content Structure - Print-inspired */
+.article-meta {
+    margin-bottom: var(--space-md); /* Balanced breathing */
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+}
+
+.article-meta time {
+    display: inline;
+}
+
+.article-meta span {
+    display: inline;
+    margin-left: var(--space-xs);
+    font-style: normal; /* No italic */
+}
+
+
+
+
+
+/* Image styling - Print-inspired */
+img {
+    max-width: 80%;
+    height: auto;
+    margin: var(--space-sm) 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 0 var(--space-md);
+        margin: var(--space-md) auto; /* Tighter on mobile */
+    }
+
+    nav li {
+        display: block;
+        margin: var(--space-xs) 0;
+    }
+
+    h1 {
+        font-size: 1.75rem; /* Smaller on mobile */
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.125rem;
+    }
+}
