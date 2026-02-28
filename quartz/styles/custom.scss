@@ -38,3 +38,12 @@ footer a:hover {
 footer a.external:hover .external-icon > path {
   fill: var(--light);
 }
+
+/* Fix hover for list-page note links — listPage.scss sets background-color: transparent
+   with specificity (0,3,3), which beats .center a:hover (0,2,1).
+   This rule at (0,4,3) wins on hover to restore the inversion effect. */
+li.section-li .section .desc h3 a:hover {
+  background-color: var(--dark);
+  color: var(--light);
+  text-decoration: none;
+}

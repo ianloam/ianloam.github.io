@@ -106,6 +106,27 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     for (const dest of outgoing) {
       if (validLinks.has(dest)) {
         links.push({ source: source, target: dest })
+      } else {
+        // folder-index slugs are keyed as "Posts/" (trailing slash) but link
+        // targets from wikilinks arrive as "Posts" (no slash) — try both
+        const destWithSlash = (dest + "/") as SimpleSlug
+        if (validLinks.has(destWithSlash)) {
+          links.push({ source: source, target: destWithSlash })
+        }
+      }
+    }
+
+    // Add implicit edge from parent folder index to this page.
+    // e.g. "Notes/note" → parent "Notes/" so the folder node connects to its children.
+    if (source !== "/") {
+      const slashIdx = source.endsWith("/")
+        ? source.slice(0, -1).lastIndexOf("/")
+        : source.lastIndexOf("/")
+      if (slashIdx !== -1) {
+        const parentFolder = (source.slice(0, slashIdx + 1)) as SimpleSlug
+        if (validLinks.has(parentFolder)) {
+          links.push({ source: parentFolder, target: source })
+        }
       }
     }
 
