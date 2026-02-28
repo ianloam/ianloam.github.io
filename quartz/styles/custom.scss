@@ -13,16 +13,22 @@ body[data-slug="index"] {
   }
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
 }
 
 /* Dotted underline + normal weight for content and footer links only */
 .center a,
-.center a.internal,
 footer a {
   font-weight: normal;
   text-decoration: underline dotted;
+}
+
+/* Strip base.scss's internal link pill (background + padding) in content areas */
+.center a.internal,
+footer a.internal {
+  background-color: transparent;
+  padding: 0;
 }
 
 /* Inversion hover scoped to content — uses CSS vars so it works in both light and dark mode */
