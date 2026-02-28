@@ -45,6 +45,18 @@ footer a.external:hover .external-icon > path {
   fill: var(--light);
 }
 
+/* PDF embeds: portrait aspect ratio for readable page view; hidden on mobile */
+iframe.pdf {
+  aspect-ratio: 17 / 22; /* US Letter portrait */
+  height: unset;
+}
+
+@media (max-width: 800px) {
+  iframe.pdf {
+    display: none;
+  }
+}
+
 /* Fix hover for list-page note links — listPage.scss sets background-color: transparent
    with specificity (0,3,3), which beats .center a:hover (0,2,1).
    This rule at (0,4,3) wins on hover to restore the inversion effect. */
