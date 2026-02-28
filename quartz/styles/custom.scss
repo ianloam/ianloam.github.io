@@ -1,3 +1,40 @@
 @use "./base.scss";
-
 // put your custom CSS here!
+* {
+  border-radius: 0 !important;
+}
+.graph {
+  display: none;
+}
+/* The "If Homepage" State (True) */
+body[data-slug="index"] {
+  .graph {
+    display: block;
+  }
+}
+
+h1, h2, h3 {
+  font-weight: 300;
+}
+
+/* Dotted underline + normal weight for content and footer links only */
+.center a,
+.center a.internal,
+footer a {
+  font-weight: normal;
+  text-decoration: underline dotted;
+}
+
+/* Inversion hover scoped to content — uses CSS vars so it works in both light and dark mode */
+.center a:hover,
+footer a:hover {
+  background-color: var(--dark);
+  color: var(--light);
+  text-decoration: none;
+}
+
+/* Keep external link icon visible on hover */
+.center a.external:hover .external-icon > path,
+footer a.external:hover .external-icon > path {
+  fill: var(--light);
+}

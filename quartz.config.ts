@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "Ian Loam",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -23,12 +23,23 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        header: "DM Sans",
+        body: "DM Sans",
+        code: "JetBrains Mono",
       },
       colors: {
         lightMode: {
+          light: "#F9F8F4",       // Bone Paper
+          lightgray: "#777777", // No borders
+          gray: "#555555",        // Dark Grey (Metadata)
+          darkgray: "#363636",    // Charcoal (Body Text)
+          dark: "#000000",        // Black (Headers)
+          secondary: "#000000",   // Black (Links) - NO BLUE
+          tertiary: "#555555",    // Grey (Hover)
+          highlight: "transparent",
+        },
+
+           /*  lightMode: {
           light: "#faf8f8",
           lightgray: "#e5e5e5",
           gray: "#b8b8b8",
@@ -38,7 +49,7 @@ const config: QuartzConfig = {
           tertiary: "#84a59d",
           highlight: "rgba(143, 159, 169, 0.15)",
           textHighlight: "#fff23688",
-        },
+        },*/
         darkMode: {
           light: "#161618",
           lightgray: "#393639",
