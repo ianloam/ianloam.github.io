@@ -3,6 +3,21 @@
 * {
   border-radius: 0 !important;
 }
+
+html {
+  font-size: 15px;
+}
+
+tbody,
+li,
+p {
+  line-height: 1.5rem;
+}
+.fold,
+.folder-icon {
+  transition: none !important;
+}
+
 .graph {
   display: none;
 }

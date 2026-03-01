@@ -11,14 +11,12 @@ const config: QuartzConfig = {
     pageTitle: "Ian Loam",
     pageTitleSuffix: "",
     enableSPA: true,
-    enablePopovers: true,
-    analytics: {
-      provider: "plausible",
-    },
+    enablePopovers: false,
+    analytics: null,
     locale: "en-US",
     baseUrl: "ianloam.com",
     ignorePatterns: ["private", "templates", ".obsidian"],
-    defaultDateType: "modified",
+    defaultDateType: "published",
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
@@ -29,7 +27,7 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#F9F8F4",       // Bone Paper
+          light: "#FFFFFF",       // Bone Paper
           lightgray: "#777777", // No borders
           gray: "#555555",        // Dark Grey (Metadata)
           darkgray: "#363636",    // Charcoal (Body Text)
