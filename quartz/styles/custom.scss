@@ -60,6 +60,14 @@ footer a.external:hover .external-icon > path {
   fill: var(--light);
 }
 
+.search {
+  max-width: 100%;
+}
+
+.page-title a {
+  font-weight: 300;
+}
+
 /* PDF embeds: portrait aspect ratio for readable page view; hidden on mobile */
 iframe.pdf {
   aspect-ratio: 17 / 22; /* US Letter portrait */
