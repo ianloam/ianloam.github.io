@@ -68,15 +68,27 @@ footer a.external:hover .external-icon > path {
   font-weight: 300;
 }
 
-/* PDF embeds: portrait aspect ratio for readable page view; hidden on mobile */
-iframe.pdf {
-  aspect-ratio: 17 / 22; /* US Letter portrait */
-  height: unset;
-}
-
-@media (max-width: 800px) {
+/* PDF embeds */
+.pdf-container {
   iframe.pdf {
+    display: block;
+    width: 100%;
+    aspect-ratio: 17 / 22; /* US Letter portrait */
+    height: unset;
+  }
+
+  .pdf-mobile-link {
     display: none;
+  }
+
+  @media (max-width: 800px) {
+    iframe.pdf {
+      display: none;
+    }
+
+    .pdf-mobile-link {
+      display: inline;
+    }
   }
 }
 
